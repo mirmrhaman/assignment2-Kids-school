@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles/style.css">
+<link rel="stylesheet" href="./styles/style.css">
 
 </head>
-<body>
+<body class="quicksand-font">
     <!-- Navbar -->
     <header>
         
         <nav class="navbar">
             <!-- Logo -->
             <div class="logo">
-                <img src="/assets/logo.png" alt="Logo">
+                <img src="./assets/logo.png" alt="Logo">
                 <h1>SCHOOL</h1>
             </div>
 
@@ -35,6 +32,7 @@
                 <li><a href="" class="text-orange">Home</a></li>
                 <li><a href="" class="text-skyblue">About</a></li>
                 <li><a href="" class="text-flashing">Facilities</a></li>
+                <li><a href="" class="text-purple">Admission</a></li>
             </ul>
 
             <!-- Contact Button -->
@@ -44,63 +42,65 @@
         
     </header>
     <main>
-    <!-- Banner -->
-    <section class="hero bg-color display-flex">
-        <div class="hero-content">
-          <h1>
-            <span class="text-orange">Empowering</span> students from small age
+    
+        <!-- Banner -->
+<section class="banner">
+    
+  <div class="banner-content">
+        <h1>
+            <span class="text-orange">Empowering</span> students from a young age
             <span class="text-skyblue">towards vision</span>
-          </h1>
-          <p>
-            With courage, creativity, and compassion to make their unique
-            contribution in a diverse and dynamic world.
-          </p>
-          <button class="btn-primary hero-btn bg-black">Enroll Now</button>
-        </div>
-        <div class="hero-img">
-            <img src="/assets/hero-kids.png" alt="Child Learning" />
-        </div>
-      </section>  
+        </h1>
+        <p>
+            With courage, creativity, and compassion to make their unique contributions in a diverse and dynamic world.
+        </p>
+        <button class="btn-primary banner-btn">Enroll Now</button>
+    </div>
+    <div class="banner-image">
+        <img src="./assets/hero-kids.png" alt="Child Learning">
+    </div>
+</section>  
 
-    <!-- Standard Curriculum -->
-    <section class="sections">
-        <h2 class="text-black">Standard Curriculum</h2>
-        <div class="sectionz display-flex">
-            <div class="section" id="section1">
-                <img src="./assets/kinder.png" alt="">
+    <!-- Standard Curriculum Section -->
+    <section class="standard-curriculum">
+        <h2>Standard Curriculum</h2>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card" id="card1">
+                <img src="./assets/kinder.png" alt="Kinder">
                 <h3>Kinder (3-6) Years</h3>
                 <p>Focused learning for the youngest students.</p>
-                <a href="#" class="read-more-link text-skyblue">Read More</a>
+                <a href="#" class="read-more text-skyblue">Read More</a>
             </div>
-            <div class="section" id="section2">
-                <img src="./assets/elementary.png" alt="">
+            <!-- Card 2 -->
+            <div class="card" id="card2">
+                <img src="./assets/elementary.png" alt="Elementary">
                 <h3>Elementary School</h3>
                 <p>Building strong foundations for a bright future.</p>
-                <a href="#" class="read-more-link text-orange">Read More</a>
+                <a href="#" class="read-more text-orange">Read More</a>
             </div>
-            <div class="section" id="section3">
-                <img src="./assets/middle.png" alt="">
+            <!-- Card 3 -->
+            <div class="card" id="card3">
+                <img src="./assets/middle.png" alt="Middle">
                 <h3>Middle (10-16) Years</h3>
                 <p>Preparing students for advanced challenges.</p>
-                <a href="#" class="read-more-link text-purple">Read More</a>
-                
+                <a href="#" class="read-more text-purple">Read More</a>
             </div>
         </div>
-        <div class="arrows">
-            <div class="arrow">&#8249;</div>
-            <div class="arrow">&#8250;</div>
+        <!-- Arrow Buttons -->
+        <div class="arrow-buttons display-flex">
+            <button class="arrow left-arrow">&#8249;</button>
+            <button class="arrow right-arrow">&#8250;</button>
         </div>
-      </section>
-
+    </section>
 
 <!-- Our Stories -->
 <section class="our-stories">
     <h2 id="story">Our Stories</h2>
-  <div class="stories">        
-    <div class="story-card " id="box-1" >
-        <div>
-        </div>
-        <img src="./assets/story-1.png" alt="" />
+  <div class="stories">  
+    <!-- Card 1 -->
+    <div class="story-card " id="box-1" >        
+        <img src="./assets/story-1.png" alt="Story 1" />
         <button class="story-lft-btn  bg-skyblue">September 10, 2019</button>
         <div> 
             <h3>A fun toddler coloring training on classroom</h3>
@@ -111,42 +111,58 @@
             </p>
         </div>
     </div>
+    <!-- Card 2 -->
     <div class="story-card">
-      <img src="./assets/story-2.png" alt="" />
+      <img src="./assets/story-2.png" alt="Story 2" />
       <button class="story-in-btn bg-green">September 10, 2019</button>
       <h3>Find out if a school fits the family's needs</h3>
+      <p>
+        A guide to help parents select the perfect school for their child's academic journey.
+    </p>
     </div>
+    <!-- Card 3 -->
     <div class="story-card">
-      <img src="./assets/story-3.png" alt="" />
+      <img src="./assets/story-3.png" alt="Story 3" />
       <button class="story-in-btn  bg-orange">November 19, 2019</button>
       <h3>Summer math & literacy centres for kids</h3>
+      <p>
+        Innovative learning centers designed to enhance summer learning experiences for children.
+    </p>
     </div>
+    <!-- Card 4 -->
     <div class="story-card">
-      <img src="./assets/story-4.png" alt="" />
+      <img src="./assets/story-4.png" alt="Story 4" />
       <button class="story-in-btn bg-green">September 10, 2019</button>
       <h3>Classroom management technique for new tutors</h3>
+      <p>
+        Empowering new educators with proven strategies for effective classroom management.
+    </p>
     </div>
+    <!-- Card 5 -->
     <div class="story-card">
-      <img src="./assets/story-5.png" alt="" />
+      <img src="./assets/story-5.png" alt="Story 5" />
       <button class="story-in-btn bg-green">July 19, 2019</button>
       <h3>Conversation rhymes improve kids listening</h3>
+      <p>
+        Discover how engaging rhymes enhance children’s listening and language skills.
+    </p>
     </div>
   </div>
 
   <div class="story-btn display-flex">
     <div>
-      <button class="btn-primary hero-btn bg-black">View All</button>
+      <button class="btn-primary banner-btn">View All</button>
     </div>
   </div>
 </section>
 
 
 </main>
-<footer>
-    <section class="footer-columns display-flex ">
-      <div>
-        <div class="footer-kids">
-             <svg xmlns= <svg width="300" height="82" viewBox="0 0 300 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<footer class="footer">
+    <section class="footer-container">
+      <div class="footer-column1">
+        <div class="footer-logo">
+             <svg xmlns= svg width="300" height="82" viewBox="0 0 300 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_4_73)">
                 <path d="M68.1729 32.6515L52.6691 29.1058L57.2526 9.66442C57.8593 7.09064 60.4697 5.48854 63.0829 6.08626L69.1232 7.46748C71.7364 8.06504 73.363 10.6361 72.7561 13.2099L68.1729 32.6515Z" fill="white"/>
                 <path d="M14.7296 32.6516L30.2333 29.106L25.65 9.66442C25.0433 7.09064 22.4329 5.48854 19.8197 6.08626L13.7793 7.46764C11.1661 8.0652 9.53944 10.6363 10.1463 13.2101L14.7296 32.6516Z" fill="white"/>
@@ -181,21 +197,24 @@
           bocor Mogo
           meatball</p>
       </div>
-      <div class="about">
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-navigation">
         <h3>About School</h3>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Facilities</a></li>
-          <li><a href="">Admissions</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Facilities</a></li>
+          <li><a href="#">Admissions</a></li>
         </ul>
       </div>
-      <div class="keep-in-touch">
+      <!-- Column 3: Social Media Icons -->
+      <div class="footer-social">
         <h3>Keep in Touch</h3>
-        <img src="./assets/fb.png" alt="">
-        <img src="./assets/dribble.png" alt="">
-        <img src="./assets/twitter.png" alt="">
-        <img src="./assets/google+.png" alt="">
+        <div class="social-icons"></div>
+        <img src="./assets/fb.png" alt="Facebook">
+        <img src="./assets/dribble.png" alt="Dribble">
+        <img src="./assets/twitter.png" alt="Twitter">
+        <img src="./assets/google+.png" alt="Google">
       </div>
     </section>
   </footer>
